@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<launch>
+    <arg name="vehicle" doc="name of the vehicle"/>
+    <arg name="pkg_name" value="robot"/>
+    <arg name="node_name" default="keyboard_publisher"/>
+
+    <group ns="$(arg vehicle)">
+        <remap from="$(arg node_name)/joy" to="joy" />
+        <node pkg="$(arg pkg_name)" type="$(arg node_name).py" name="$(arg node_name)" output="screen" />
+    </group>
+</launch>

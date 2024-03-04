@@ -1,0 +1,10 @@
+<package>
+  <name>robot</name>
+  <version>0.0.1</version>
+  <description>
+    Robot package.
+  </description>
+  <maintainer email="james.yang92@gmail.com">James Yang</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>catkin</buildtool_depend>
+</package>
